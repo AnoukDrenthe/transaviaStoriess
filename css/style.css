@@ -1,0 +1,562 @@
+/* Hele pagina */
+
+* {
+    font-family: 'nexa bold';
+}
+
+body {
+    background-color: #f3e5d8;
+    margin: auto;
+    display: block;
+}
+
+button {
+    color: white;
+    background-color: #ff3268;
+    border-radius: 1.25rem;
+    border: none;
+    box-shadow: inset 0 -.1875em .0625em #ca2b55;
+    font-size: 1.2em;
+    padding: .438em 1.5em .563em;
+    display: block;
+}
+
+main > section {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #00d66c;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+article > footer {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+footer > button img {
+    max-width: 1.4rem;
+    box-shadow: none;
+}
+
+footer > button {
+    background-color: white;
+    box-shadow: none;
+    margin: 0.5em;
+}
+
+.artFo{
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+
+.micI {
+    max-width: 1.4rem;
+    box-shadow: none;
+}
+
+.mic {
+    background-color: white;
+    box-shadow: none;
+    margin: 0.5em;
+}
+
+body> div {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div > button img {
+    max-width: 1.4rem;
+    box-shadow: none;
+}
+
+div > button {
+    background-color: white;
+    box-shadow: none;
+    margin: 0.5em;
+}
+
+article > div > p.active {
+    left: 0;
+    margin: 2em;
+    border-radius: 1em;
+    box-shadow: 0 1px 2px #666666;
+    padding: 1em;
+
+    transition: all 1s;
+}
+article > div > p {
+    position: absolute;
+    left: -3000px;
+    background-color: rgba(255, 255, 255, 0.91961);
+    padding: 1em;
+    border-radius: 1.25rem;
+    color: #2800a0;
+    transition: all 1s;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
+}
+
+nav {
+    background-color: white;
+    box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, .15);
+}
+
+body > section {
+    background-image: url(europakaart.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100% 50%;
+    padding: 3em 0;
+}
+
+a img {
+    height: 2.5em;
+}
+
+nav > h1 {
+    margin: 0.1em;
+    transition: all .5s;
+}
+
+a:first-child img {
+    height: 2.2em;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em;
+    box-shadow: 1em #202020;
+}
+
+body section > h1 {
+    background-color: #2800a0;
+    display: inline-block;
+    padding: 0.5em;
+    color: #fff;
+    border-radius: .5rem;
+    margin: 0.5em;
+    height: 1em;
+}
+
+
+/* Inloggen */
+
+header form {
+    display: none;
+    transition: all .3s .3s;
+    background-color: rgba(255, 255, 255, 0.801961);
+    border-radius: 1em;
+    box-shadow: 0 1px 2px #666666;
+    position: absolute;
+    right: 0;
+    margin-top: 1em;
+}
+
+header form.active {
+    display: block;
+    position: absolute;
+    margin: 4em .4em;
+    z-index: 9;
+    padding-bottom: 1.5em;
+}
+
+header form a {
+    display: block;
+    margin-top: 0.1em;
+    color: #2800a0;
+}
+
+header form legend {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin-bottom: .8em;
+    color: #00d66c;
+    font-weight: bold;
+    padding: .5em;
+}
+
+header form label {
+    padding: 0 1em;
+    display: block;
+    color: #202020;
+    font-weight: bold;
+    line-height: 1, 5rem;
+    margin-bottom: .4em;
+}
+
+header form input {
+    min-height: 2.5rem;
+    padding: 0 1em;
+    margin: 0 1em;
+    border: .0625rem solid #91a3b7;
+    color: #606060;
+    font-size: 1rem;
+    border-radius: .5rem;
+    -webkit-transition: border .2s linear, color .2s linear;
+    transition: border .2s linear, color .2s linear;
+    margin-bottom: 1em;
+}
+
+header form div {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    padding: .1em 1.5em 0;
+    margin-top: 2em;
+}
+
+header form button {
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border: none;
+}
+
+header nav:first-of-type li:nth-child(3).count:before {
+    display: inline-block;
+    text-align: center;
+    content: "1";
+    color: #fff;
+    background-color: #2800a0;
+    width: 1.5em;
+    height: 1.5em;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    padding: 0;
+    animation: grow 2s ease;
+}
+
+
+/* ingelogd */
+
+li {
+    padding-top: 0.5em;
+}
+
+header nav:nth-of-type(2) > ul {
+    display: none;
+}
+
+header nav:nth-of-type(2) ul.active {
+    display: block;
+    list-style: none;
+    width: 17em;
+    background-color: rgba(255, 255, 255, 0.851961);
+    border-radius: 1em;
+    right: 0;
+    display: block;
+    position: absolute;
+    margin: 1em 1em;
+    padding-bottom: 1em;
+}
+
+
+/* Aside */
+
+aside {
+    margin-top: 0.5em;
+}
+
+legend {
+    font-size: 1.1em;
+}
+
+div > fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 0.5em;
+}
+
+form> fieldset input[type='checkbox'] {
+    display: inline-block;
+    width: 4em;
+    height: 1.4375rem;
+    background-color: #fff;
+    border: .0625em solid #91a3b7;
+    transition: all .5s;
+    margin: 0 1em 0 0;
+}
+
+aside form > button:first-of-type,
+aside select {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+aside select {
+    font-size: 1em;
+    padding: 0.2em;
+    border-radius: .5em;
+}
+
+aside form > fieldset {
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: -1000px;
+    background: #428bca;
+    padding: 15px;
+    border: none;
+    border-radius: 1em;
+    background: #2800a0;
+    color: white;
+    transition: all 1s;
+}
+
+aside form > fieldset.active {
+    display: flex;
+    position: relative;
+    top: 0;
+    margin: 0.5em;
+    border-radius: 1em;
+    box-shadow: 0 1px 2px #666666;
+    padding: 1em;
+    width: 50%;
+    transition: all 1s;
+}
+
+div fieldset > label {
+    margin: -1em 0 1em 2.5em;
+}
+
+
+/* achtergrond verhalen */
+
+body > section > article {
+    background-image: url(achtergrondZom.png);
+}
+
+body > section > article > p {
+    font-family: 'nexa bold';
+    color: red;
+}
+
+main > section > article:first-child {
+    background-image: url(achtergrondBe.png);
+    color: white;
+}
+
+main > section > article:nth-of-type(2) {
+    background-image: url(achtergrondOn.png);
+    color: white;
+}
+
+
+/* Main */
+
+h1 {
+    padding: 0em 0.5em;
+    color: #00d66c;
+}
+
+p {
+    font-family: 'nexa light';
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .7em;
+    padding: 0 0.5em 1em .8em;
+    margin: .6em .5em .5em .5em;
+}
+
+h2 {
+    padding-top: 0.7em;
+}
+
+
+/* Footer Artikelen*/
+
+.reading {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.reading {
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+}
+
+.reading {
+    min-width: 7rem;
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    padding: 0.9em 0.4em 0.9em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Nexa Light";
+    transition: all 0.2s;
+}
+
+.reading:hover {
+    background-color: #ff658e;
+}
+
+a {
+    margin-top: auto;
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+footer a,
+input[type="submit"] {
+    background-color: #ff3268;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+}
+
+footer a {
+    min-width: 7rem;
+    color: white;
+    border: none;
+    border-radius: 1.5em;
+    padding: 0.9em 0.4em 0.9em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Nexa Light";
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    background-color: #ff658e;
+}
+
+
+/* Footer */
+
+footer > img {
+    height: 1.5em;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 48em) {
+    section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    body > section > article {
+        display: grid;
+        grid-column-start: 2;
+    }
+    main > section {
+        margin: 3em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    nav > h1 {
+        font-size: 2.5em;
+    }
+    fieldset > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 83.75em) {
+    main > section {
+        margin: 4em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    fieldset > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Verhalen */
+
+.delen {
+    background-color: white;
+}
+
+footer > h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.verhaal-delen {
+    display: flex;
+    justify-content: center;
+}
+
+.ongver {
+    display: block;
+    background-color: #1d1d1b;
+}
+
+.berver {
+    display: block;
+    background-color: #029544;
+}
+
+.zomver {
+    display: block;
+    background-color: #b0b6b4;
+}
+
+main > img {
+    padding: 0.5em;
+    display: none;
+    border: none;
+}
+
+main > img:first-child {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 40em) {
+    main > img:first-child {
+        display: none;
+    }
+    main > img:nth-of-type(2) {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    main > img:first-child {
+        display: none;
+    }
+    main > img:nth-of-type(2) {
+        display: none;
+    }
+    main > img:last-child {
+        display: block;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <title>Zombie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="zomver">
+    <header>
+        <nav>
+
+            <a href="home.html"><img src="images/homeButton.png" alt="Home button"></a>
+
+            <h1>Transavia</h1>
+
+            <a href="#"><img src="images/Schermafbeelding%202017-10-01%20om%2011.02.24.png" alt="Inlog button"></a>
+        </nav>
+        <!-- Form: Log in -->
+        <form action="#">
+            <fieldset>
+                <legend>Inloggen
+                </legend>
+                <label for="email1">
+                    E-mailadres:
+                </label>
+                <input id="email1" name="email" placeholder="vakantie@transavia.nl" required="" type="email">
+                <label for="password1">
+                    Wachtwoord:
+                </label>
+                <input id="password1" name="password" placeholder="******" required="" type="password">
+                <button onclick="window.location.href='ingelogd.html'">
+                    Inloggen
+                </button>
+                <div>
+                    <a class="forgotPass" href="#">
+                            Wachtwoord vergeten?
+                        </a>
+                    <a class="newAccount" href="#">
+                            Een account aanmaken?
+                        </a>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Form: Forgot Password? -->
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Wachtwoord vergeten?
+                </legend>
+                <label for="email3">
+                    E-mailadres:
+                </label>
+                <input id="email3" name="email" placeholder="vakantie@tansavia.com" required="" type="email">
+                <div>
+                    <button>Wachtwoord aanvragen
+                    </button>
+                    <button class="backW">
+                        Terug
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- Form: Sing up -->
+        <form action="#">
+            <fieldset>
+                <legend>Registreren
+                </legend>
+                <label for="name">
+                    Naam:
+                </label>
+                <input id="name" name="name" placeholder="Transavia" required="" type="text">
+                <label for="email2">
+                    E-mailadres:
+                </label>
+                <input id="email2" placeholder="vakantie@transavia.com" required="" type="email">
+                <label for="password2">
+                    Wachtwoord:
+                </label>
+                <input id="password2" placeholder="******" required="" type="password">
+                <label for="password3">
+                    Herhaal wachtwoord:
+                </label>
+                <input id="password3" name="password" placeholder="******" required="" type="password">
+                <div>
+                    <button>
+                        Registreren
+                    </button>
+                    <button class="backR">
+                        Terug
+                    </button>
+                </div>
+            </fieldset>
+        </form>
+
+
+    </header>
+    <div>
+        <button><img src="images/downloaden.png" alt="downloaden"></button>
+        <button><img src="images/favoriet.png" alt="favoriet"></button>
+    </div>
+
+    <main>
+        <img class="zommob" src="images/zomob-100.jpg" alt="">
+        <img class="zomtab" src="images/zomtab-100.jpg" alt="">
+        <img class="zomdes" src="images/zomdes-100.jpg" alt="">
+    </main>
+
+
+
+    <script src="js/jas.js"></script>
+</body>
+
+</html>
